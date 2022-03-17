@@ -15,3 +15,6 @@ Chongqing University software Engineering course assignment
 
 >>2.4交互模块(Interaction_module)  
     描述：具有显示界面和交互按钮，显示输入数据、输出结果，键入数据和运算函数，键入清除、结果指令。  
+    
+>>2.5异常模块(Abnormal_module)  
+    描述：具有显示界面和交互按钮，显示输入数据、输出结果，键入数据和运算函数，键入清除、结果指令。
