@@ -8,8 +8,14 @@ Chongqing University software Engineering course assignment
     描述：主程序，协调控制计算模块、数据模块和交互模块。  
 
 >>2.2计算模块(Calculation_module)  
-    描述：完成三角函数sin、cos、tan、cot、sec、csc运算。  
-
+    描述：完成三角函数sin、cos、tan、cot、sec、csc运算。
+    
+    （1）sct.h内有deg2rad()、rad2deg()、t_sin()、t_cos()、t_tan()、t_sec()、t_csc()、t_cot()的计算函数，传递参数采用double类型，返回的函数也为double类型。
+    
+    （2）t_sin()、t_cos()、t_tan()、t_sec()、t_csc()、t_cot()计算时传入的为弧度制的角。
+    
+    （3）若传入的数值为角度，可调取deg2rad()函数转成弧度，在进一步调取三角函数的计算函数。
+    
 >>2.3数据模块(Data_module)  
     描述：定义数据类型、长度属性，缓存待处理和已完成数据。  
 
