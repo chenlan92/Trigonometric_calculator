@@ -8,8 +8,8 @@ using namespace std;
  
 int main()
 {
-
-	printf("%lf \n", t_sin(0.52));//调取sct.h中t_sin函数计算正弦函数值 
+    //调取sct.h中函数计算函数值
+	printf("%lf \n", t_sin(-1.57)); 
 	printf("%lf \n", t_cos(0.52));	 
     printf("%lf \n", t_tan(3.14));
     printf("%lf \n", t_sec(3.14));	 

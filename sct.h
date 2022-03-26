@@ -15,16 +15,10 @@ double deg2rad(double deg)
 {
     return (deg*PI)/180.0;
 }
+//弧度转角度 
 double rad2deg(double rad)
 {
     return rad*180/PI;
-}
- 
-double fabs(double x)
-{
-	if (x < 0)
-		return -x;
-	return x;
 }
  
 //区别于库函数的math.h中sin() 函数，所以采用t_sin()表示 
@@ -60,12 +54,12 @@ double t_sec(double x)
 {
 	return 1.0/t_cos(x);
 }
-
+//t_csc 
 double t_csc(double x)
 {
 	return 1.0/t_sin(x);
 }
-
+//t_cot
 double t_cot(double x)
 {
 	return t_cos(x)/t_sin(x);
