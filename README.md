@@ -2,9 +2,9 @@
 Chongqing University software Engineering course assignment
 
 >交互模块
-    界面输入：计算数值、数值类型
+    界面输入：按键值 
     
-    界面输出：计算数值、错误信息
+    界面输出：计算数值（结果）、数据类型、错误信息 
     
     交互面板按键：交互面板具有0-9数字按键、正负号按键、小数点按键、清零按键、退格按键、角度/弧度（数据类型）切换按键、sin、cos、arcsin、arctan三角函数按键
     
