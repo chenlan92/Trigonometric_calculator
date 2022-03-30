@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<math.h>
+#include<mycos.h>
 double mycos(double x)
 {
 	int n;
