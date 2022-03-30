@@ -44,12 +44,13 @@ double myatan( double x )
 	{
 		result=0.0;
 	}
-	else if(0<x && x<1)
+	else if(0<x && x<=1)
 	{
-		result= x/(1+0.28086*pow(x,2));
+		//result= x/(1+0.28086*pow(x,2));½üËÆÎó²î0.0049rad 
+		result=PI/4*x-x*(x-1)*(0.2447+0.0663*x);// ½üËÆÎó²î0.0015rad 
 	}
-	else if(x>=1)
-	{
+	else if(x>1)
+	{		
 		result= PI/2-myatan(1/x);
 	}
 	else if(x<0)
