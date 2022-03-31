@@ -8,13 +8,17 @@
 #include"mycos.h"
 #define PI  3.14159265358979323846;
 #define TIME    100;
-#define STEP    0.1;
+#define STEP1    0.1;
+#define STEP2    0.01;
+#define STEP3    1;
 using namespace std;
 
 void test()
 {
-    int t,n = 0;
-    double test_num = 0;
+    int t;
+    double test_num1 = -5;
+    double test_num1 = -0.8;
+    double test_num1 = -50;
     double sin_error;
     double cos_error;
     double asin_error;
@@ -26,19 +30,25 @@ void test()
 
     for (t = 1; t <= TIME;t++)
     {
-        sin_error += (sin(test_num) - mysin(test_num));
-        sin_error_mean = sin_error / 100;
-        cos_error += (cos(test_num) - mycos(test_num));
-        cos_error_mean = cos_error / 100;
-        asin_error += (asin(test_num) - myasin(test_num));
-        asin_error_mean = asin_error/ 100;
-        atan_error += (atan(test_num) - myatan(test_num));
-        atan_error_mean = atan_error / 100;
-        test_num += STEP;
+        sin_error += sin(test_num1) - mysin(test_num1);
+        
+        cos_error += cos(test_num1) - mycos(test_num1);
+        
+        asin_error += asin(test_num2) - myasin(test_num2);
+        
+        atan_error += atan(test_num3) - myatan(test_num3);
+      
+        test_num += STEP1;
+        test_num += STEP2;
+        test_num += STEP3;
     }
-    cout << "sinº¯ÊýÎó²î¾ùÖµ = " << sin_error_mean << endl;
-    cout << "cosº¯ÊýÎó²î¾ùÖµ = " << cos_error_mean << endl;
-    cout << "arcsinº¯ÊýÎó²î¾ùÖµ = " << asin_error_mean << endl;
-    cout << "arctanº¯ÊýÎó²î¾ùÖµ = " << atan_error_mean << endl;
+    sin_error_mean = sin_error / TIME;
+    cos_error_mean = cos_error / TIME;
+    asin_error_mean = asin_error/ TIME;
+    atan_error_mean = atan_error / TIME;
+    cout << "sinå‡½æ•°è¯¯å·®å‡å€¼ = " << sin_error_mean << endl;
+    cout << "coså‡½æ•°è¯¯å·®å‡å€¼ = " << cos_error_mean << endl;
+    cout << "arcsinå‡½æ•°è¯¯å·®å‡å€¼ = " << asin_error_mean << endl;
+    cout << "arctanå‡½æ•°è¯¯å·®å‡å€¼ = " << atan_error_mean << endl;
 }
 
