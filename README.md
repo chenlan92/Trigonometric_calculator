@@ -15,3 +15,6 @@ Chongqing University software Engineering course assignment
 
 >>2.4 Arctan计算模块  
     描述：
+    （1）输入double，返回值double
+    （2）近似公式：arctan⁡(x)=PI/4 x-x(|x|-1)(0.2447+0.0663|x|) 其中0<x<=1;
+    （3）当arctanx中x>1可以采用arctan⁡(x)=PI/2-arctan⁡(1/x)，当arctanx中x<0可以采用arctan⁡(x)=-arctan⁡(x)，当arctanx中x=0可以采用arctan⁡(0)=0.0来实现，其中最大近似误差0.0015rad。
