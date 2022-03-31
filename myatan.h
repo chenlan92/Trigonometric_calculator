@@ -10,18 +10,18 @@
 #define COEFF   6370693.4856530580439461631130889
 
 
-//½Ç¶È×ª»¡¶È
+//è§’åº¦è½¬å¼§åº¦
 double deg2rad(double deg)
 {
     return (deg*PI)/180.0;
 }
-//»¡¶È×ª½Ç¶È 
+//å¼§åº¦è½¬è§’åº¦ 
 double rad2deg(double rad)
 {
     return rad*180/PI;
 }
 
-//x^nÖµ 
+//x^nè®¡ç®—
 double pow(double x, int n)
 {
 	double result = 1;
@@ -46,8 +46,8 @@ double myatan( double x )
 	}
 	else if(0<x && x<=1)
 	{
-		//result= x/(1+0.28086*pow(x,2));½üËÆÎó²î0.0049rad 
-		result=PI/4*x-x*(x-1)*(0.2447+0.0663*x);// ½üËÆÎó²î0.0015rad 
+		//result= x/(1+0.28086*pow(x,2));è¿‘ä¼¼å…¬å¼çš„è®¡ç®—è¯¯å·®0.0049rad 
+		result=PI/4*x-x*(x-1)*(0.2447+0.0663*x);// è¿‘ä¼¼è®¡ç®—çš„è¯¯å·®0.0015rad 
 	}
 	else if(x>1)
 	{		
