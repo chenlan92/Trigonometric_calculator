@@ -2,6 +2,9 @@
 Chongqing University software Engineering course assignment
 小组成员：陈逸祥 黄新鑫 勾焯 严世成 范峻麟
 
+>v2.0版本说明
+>>整合程序最终版本，修正了1.1版本中存在的cos函数不能输出负数问题
+
 >v1.1版本说明
 >>基于v1.0程序面板，使用来自张一帆（ztt2024）小组的程序tri-function中的三角函数计算代码替换原v1.0程序中的三角函数代码，完成初步整合
 
